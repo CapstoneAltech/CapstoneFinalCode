@@ -44,7 +44,7 @@ def extract_pose_from_video(input_loc, output_loc, dependencies_loc):
     count = 0
     print (">>>>>>> Converting video frame to pose..\n")
     # Start converting the video
-    while (cap.isOpened() and count <= 10):
+    while (cap.isOpened()):
         # Extract the frame
         ret, frame = cap.read()
         # Write the results back to output location.
